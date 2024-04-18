@@ -8,7 +8,7 @@
 #pragma region ander
 
 #define benutze using
-#define einstiegspunkt main
+#define haupt main
 #define __LEINE__ __LINE__
 #define __DATEI__ __FILE__
 
@@ -23,17 +23,17 @@
 #define struktur struct
 #define aufzählung enum
 #define konstante const
-#define virtuel virtual
+#define virtuell virtual
 #define statisch static
 #define öffentlich public
 #define geschützt protected
 
-#define werfen throw
-#define zurück return
+#define wirf throw
+#define rückgabe return
 
 #define neu new
-#define löschen delete
-#define löschen_array delete[]
+#define lösche delete
+#define lösche_array delete[]
 
 #define oder or
 #define und and
@@ -51,10 +51,12 @@
 
 #define referenz(A) (&A)
 #define zeiger(A) A*
-#define index(A) [A]
 
 #define größer_als >
 #define kleiner_als < 
+
+#define ist_wahr == wahr
+#define ist_falsch == falsch
 
 #pragma endregion
 
@@ -64,11 +66,11 @@ benutze leere = void;
 
 benutze zeichen = char;
 benutze ganzzahl = int;
-benutze schweben = float;
-benutze doppelt = double;
-benutze satz = std::string;
+benutze fließkommazahl = float;
+benutze doppelt_ganzzahl = double;
+benutze zeichenkette = std::string;
 
-benutze c_satz = char*;
+benutze c_zeichenkette = char*;
 
 vorlage<klasse T>
 benutze vektor = std::vector < T>;
@@ -88,11 +90,11 @@ benutze liste = std::list<T>;
 #pragma endregion
 
 #pragma region funktionen
-#define schreiben printf
+#define ausgabef printf
 
 #pragma endregion
 
 #define kopiere_speicher memcpy
 #define setze_speicher memset
-#define größe_c_satz strlen
+#define c_zeichenkette_länge strlen
 #define kopiere_satz strcpy
